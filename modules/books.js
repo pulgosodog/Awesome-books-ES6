@@ -7,10 +7,18 @@ export default class Books {
   }
 
   addBook() {
-    const array = JSON.parse(localStorage.getItem('booksStorage'));
-    array.push(this);
-    JSON.stringify(array);
-    localStorage.setItem('booksStorage', JSON.stringify(array));
+    if(JSON.parse(localStorage.getItem('booksStorage')) === null){
+      localStorage.setItem('booksStorage', JSON.stringify([]))
+    }
+    else {
+      let array = JSON.parse(localStorage.getItem('booksStorage'));
+      array.push(this);
+      JSON.stringify(array);
+      localStorage.setItem('booksStorage', JSON.stringify(array));
+      console.log('adding book')
+      console.log('book array', array)
+      console.log('json file', JSON.parse(localStorage.getItem('booksStorage')));
+    }
   }
 
   removeBook() {
