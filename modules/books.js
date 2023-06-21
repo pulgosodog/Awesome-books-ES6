@@ -10,7 +10,7 @@ export default class Books {
     if (JSON.parse(localStorage.getItem('booksStorage')) === null) {
       localStorage.setItem('booksStorage', JSON.stringify([]));
     } else {
-      //  eslint-disable-next-line 
+      //  eslint-disable-next-line
       let array = JSON.parse(localStorage.getItem('booksStorage'));
       array.push(this);
       localStorage.setItem('booksStorage', JSON.stringify(array));
