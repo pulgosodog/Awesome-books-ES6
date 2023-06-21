@@ -11,7 +11,7 @@ nav {
   justify-content: space-between;
   border: 5px solid black;
   width: 95vw;
-  margin: 2vw;
+  margin: 2vw 2vw 0;
 }
 
 nav ul {
@@ -43,6 +43,13 @@ nav ul img {
 h1 {
   font-size: 1.8rem;
   margin: 1vw 2vw;
+}
+
+div.time {
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: self-end;
+  margin: 0 2vw;
 }
 
 section#library {
