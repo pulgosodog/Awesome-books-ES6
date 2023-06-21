@@ -4,7 +4,7 @@
   <img src="cat-black-face.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Awesome Books</b></h3>
+  <h3><b>Awesome Books ES6</b></h3>
 
 </div>
 
