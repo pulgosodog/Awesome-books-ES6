@@ -4,21 +4,21 @@ export default class Books {
   constructor(title, author) {
     this.title = title;
     this.author = author;
-    }
+  }
 
   addBook() {
     const array = JSON.parse(localStorage.getItem('booksStorage'));
     array.push(this);
     JSON.stringify(array);
     localStorage.setItem('booksStorage', JSON.stringify(array));
-    };
+  }
 
   removeBook() {
     let array = JSON.parse(localStorage.getItem('booksStorage'));
     array = array.filter((books) => books.title !== `${this.title}` && books.author !== `${this.author}`);
     JSON.stringify(array);
     localStorage.setItem('booksStorage', JSON.stringify(array));
-    };
+  }
 
   insertBookHtml() {
     const div = document.createElement('div');
@@ -42,5 +42,5 @@ export default class Books {
     div.appendChild(button);
     div.classList.add('book');
     bookSection.appendChild(div);
-    };
+  }
 }

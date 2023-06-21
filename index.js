@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
     bookLibrary.forEach((n) => {
       n.insertBookHtml();
     });
-    }
+  }
 });
