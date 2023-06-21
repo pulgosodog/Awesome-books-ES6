@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome Books</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Awesome Books</h1>
+            <ul>
+                <li><a class="menu-item first list" href="#">List</a> </li>
+                <img src="images/or.png" alt="">
+                <li><a class="menu-item add-new" href="#">Add new</a></li>
+                <img src="images/or.png" alt="">
+                <li><a class="menu-item contact" href="#" onclick="works()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="library">
+        <h2>All awesome Books</h2>
+        <div id="book-list">
+
+        </div>
+
+    </section>
+
+
+    <section id="add-new">
+        <h2>Add a new Book</h2>
+        <form action="submit">
+            <input type="text" name="title" id="tittle-name" placeholder="Tittle">
+            <input type="text" name="author" id="author-name" placeholder="Author">
+            <input id="form-btn" type="submit" value="Add">
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact information</h2>
+        <p>Do you have any questions or just want to say "Hello"?<br>
+        You can reach out to me!</p>
+        <ul>
+            <li>
+                My e-email: notmyemail@awesomebooks.com
+            </li>
+            <li>
+            My phone number: +505 777-777
+            </li>
+           <li>
+            My address: RealStreet 13st, 794613 Terabitia, Narnia.
+           </li>
+        </ul>
+    </section>
+    <footer id="copyright">
+        <div>
+            <h2>Copyright</h2>
+            <p>...</p>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
