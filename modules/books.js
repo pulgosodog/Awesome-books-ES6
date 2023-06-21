@@ -7,17 +7,16 @@ export default class Books {
   }
 
   addBook() {
-    if(JSON.parse(localStorage.getItem('booksStorage')) === null){
-      localStorage.setItem('booksStorage', JSON.stringify([]))
+    if (JSON.parse(localStorage.getItem('booksStorage')) === null) {
+      localStorage.setItem('booksStorage', JSON.stringify([]));
     }
     else {
+      //ESLint marking to change to a const intead of a let, disabling ESLint in the next line because a value is push to array later on.
+      // eslint-disable-next-line 
       let array = JSON.parse(localStorage.getItem('booksStorage'));
       array.push(this);
       JSON.stringify(array);
       localStorage.setItem('booksStorage', JSON.stringify(array));
-      console.log('adding book')
-      console.log('book array', array)
-      console.log('json file', JSON.parse(localStorage.getItem('booksStorage')));
     }
   }
 

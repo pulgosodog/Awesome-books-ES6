@@ -1,6 +1,7 @@
 import Books from './modules/books.js';
 import { addNew, list, contact } from './modules/SPA.js';
-import { currentDate } from './modules/time.js';
+import currentDate from './modules/time.js';
+
 currentDate();
 
 const addNewTag = document.querySelector('a.menu-item.add-new');
